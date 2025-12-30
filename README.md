@@ -1,60 +1,62 @@
-Real Estate Price Prediction Model
-Overview
+## Real Estate Price Prediction Model
+# Overview
 
-This project builds a machine learning regression pipeline to predict real estate prices based on property characteristics and location-related features. The goal is to demonstrate end-to-end handling of structured tabular data, from preprocessing to model evaluation.
+This project implements a machine learning model to predict real estate property prices based on structured housing data.
+The goal is to demonstrate a complete end-to-end regression workflow: data preprocessing, feature engineering, model training, and evaluation.
 
-Problem Statement
+# Problem Statement
 
-Accurately estimating property prices is critical for buyers, sellers, and investors. Given historical housing data, this project aims to learn the relationship between property attributes and market value to produce reliable price estimates.
+Accurately estimating property prices is a common real-world problem in real estate, finance, and urban analytics.
+Given historical property data (location, size, and other attributes), the model learns patterns that influence market value.
 
-Dataset
+# Dataset
 
-Structured tabular real estate data
+Structured tabular dataset containing property features
 
-Features may include:
+Target variable: property price
 
-Location-based attributes
+Includes numerical and categorical attributes
 
-Property size and layout
+(Dataset source can be replaced or extended without changing the pipeline.)
 
-Construction or age-related features
+# Approach
 
-Target variable: Property price
-
-(Dataset is assumed to be cleaned of identifiers and suitable for supervised learning.)
-
-Methodology
-
-Data Preprocessing
+Data Cleaning
 
 Handling missing values
 
-Feature scaling and normalization
-
-Train-test split
+Removing inconsistent or invalid entries
 
 Feature Engineering
 
-Selection of relevant predictors
+Encoding categorical variables
 
-Removal of redundant or noisy features
+Scaling numerical features
 
-Modeling
+# Modeling
 
-Regression-based machine learning models
+Applied regression algorithms using scikit-learn
 
-Model training and hyperparameter tuning
+Trained and validated models on historical data
 
-Evaluation
+# Evaluation
 
-Performance measured using regression metrics such as:
+Performance measured using regression metrics (e.g. RMSE, R²)
 
-Mean Absolute Error (MAE)
+Compared predictions against actual prices
 
-Mean Squared Error (MSE)
+Technologies Used
 
-R² Score
+* Python
 
-Results
+* Pandas
 
-The trained model demonstrates the ability to capture key pricing patterns in real estate data, producing reasonable estimates within acceptable error bounds for a baseline predictive system.
+* NumPy
+
+* Scikit-learn
+
+* Jupyter Notebook
+
+# Results
+
+The model demonstrates the ability to learn meaningful relationships between property features and prices, achieving reasonable predictive performance on unseen data.
